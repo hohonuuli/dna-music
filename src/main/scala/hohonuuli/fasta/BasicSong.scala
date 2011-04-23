@@ -8,12 +8,12 @@ import org.jfugue.Pattern
  * @since 2011-04-22
  */
 
-class BasicSong(fastaSeq: FastaSeq) extends DNASong {
+class BasicSong(fastaSeq: FastaSeq, noteMap: Map[String, String] = BasicSong.noteMap) extends DNASong {
     lazy val pattern = {
         /* V38 45 52 53 55 62 84 */
         new Pattern("V0 I38 " +
                 fastaSeq.asBases
-                        .map( c => BasicSong.noteMap.getOrElse(c.toString, ""))
+                        .map( c => noteMap.getOrElse(c.toString, ""))
                         .mkString(" "))
     }
 
