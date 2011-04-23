@@ -1,0 +1,13 @@
+Basic Usage:
+
+    import hohonuuli.fasta._
+
+    // val f = new FastaNucleicAcidSeq(fastaString) // nucleic acid format
+    // val f = new FastaProteinSeq(fastaString)     // amino acid format
+
+    val f = new FastaSeq(fastaString)               // for ACGTU only
+    val s = new BasicSong(f)
+    DNAPlayer.play(s)
+
+    // DNAPlayer.save(s)                            // to save as midi file
+

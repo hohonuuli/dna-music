@@ -12,8 +12,8 @@ object BasicSongDemo {
     def main(args: Array[String]) {
         val f = new FastaSeq(fasta)
         val s = new BasicSong(f)
-        //DNAPlayer.play(s)
-        DNAPlayer.save(s, new File("GRCh37.midi"))
+        DNAPlayer.play(s)
+        //DNAPlayer.save(s, new File("GRCh37.midi"))
     }
 
     val fasta = """>gi|224589818:34204577-34214008 Homo sapiens chromosome 6, GRCh37.p2 primary reference assembly
