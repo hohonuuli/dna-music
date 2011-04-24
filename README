@@ -1,3 +1,13 @@
+What?:
+
+Some code to convert Gene sequences into songs.
+
+
+Why?:
+
+1) 'Cause I can
+2) Haven't you ever wondered if genes would make good songs.
+
 Basic Usage:
 
     import hohonuuli.fasta._
