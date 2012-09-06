@@ -8,7 +8,7 @@ package hohonuuli.fasta
 
 class FastaNucleicAcidSeq(fasta: String) extends FastaSeq(fasta) {
 
-    override lazy val asBases: String = fasta.map( c =>
+    override val asBases: String = super.asBases.map( c =>
         FastaNucleicAcidSeq.nucleicAcidMap.getOrElse(c.toString, "")
     ).mkString
     

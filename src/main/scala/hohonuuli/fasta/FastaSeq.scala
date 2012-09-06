@@ -20,6 +20,6 @@ class FastaSeq(fasta: String) {
         source.getLines.filterNot( p => p.startsWith(">") || p.startsWith(";") ).mkString("\n")
     }
 
-    lazy val asBases: String = body.filterNot { _ == '\n'}
+    def asBases: String = body.filterNot { _ == '\n'}
     
 }

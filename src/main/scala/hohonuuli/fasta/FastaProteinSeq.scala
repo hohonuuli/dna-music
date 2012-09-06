@@ -10,7 +10,7 @@ import io.Source
 
 class FastaProteinSeq(val fasta: String) extends FastaSeq(fasta) {
 
-    override lazy val asBases = fasta.map( c =>
+    override val asBases: String = super.asBases.map( c =>
         FastaProteinSeq.aminoAcidMap.getOrElse(c.toString, "")
     ).mkString
     
