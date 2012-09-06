@@ -4,7 +4,7 @@ import org.jfugue.Pattern
 
 /**
  * 
- * @author Brian Schlining
+ * @author Hohonuuli
  * @since 2011-04-22
  */
 

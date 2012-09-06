@@ -4,7 +4,7 @@ import java.io.File
 
 /**
  * 
- * @author Brian Schlining
+ * @author Hohonuuli
  * @since 2011-04-22
  */
 

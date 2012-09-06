@@ -4,7 +4,7 @@ import org.jfugue.{Rhythm, PatternInterface}
 
 /**
  * 
- * @author Brian Schlining
+ * @author Hohonuuli
  * @since 2011-04-22
  */
 
