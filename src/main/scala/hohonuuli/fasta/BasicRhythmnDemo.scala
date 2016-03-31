@@ -1,21 +1,21 @@
 package hohonuuli.fasta
 
 /**
- * 
+ *
  * @author Hohonuuli
  * @since 2011-04-22
  */
 
 object BasicRhythmnDemo {
 
-    def main(args: Array[String]) {
-        val f = new FastaSeq(fasta)
-        val s = new BasicRhythmn(f)
-        DNAPlayer.play(s)
-        //DNAPlayer.save(s, new File("GRCh37.midi"))
-    }
+  def main(args: Array[String]): Unit = {
+    val f = new FastaSeq(fasta)
+    val s = new BasicRhythmn(f)
+    DNAPlayer.play(s)
+    //DNAPlayer.save(s, new File("GRCh37.midi"))
+  }
 
-    val fasta = """>gi|224589818:34204577-34214008 Homo sapiens chromosome 6, GRCh37.p2 primary reference assembly
+  val fasta = """>gi|224589818:34204577-34214008 Homo sapiens chromosome 6, GRCh37.p2 primary reference assembly
 CATTTGCATGGCCCCGCCCCCTGAGTGACACGGCTGGCGCGGGCGGGCCCGTCCCCCCTGCCCCTGGGTC
 GCTCTTTTTAAGCTCCCCTGAGCCGGTGCTGCGCTCCTCTAATTGGGACTCCGAGCCGGGGCTATTTCTG
 GCGCTGGCGCGGCTCCAAGAAGGCGTGAGTTCGCGGCCGCTCCGGTGGCTTCTTTTTTTTATATCTATAA
